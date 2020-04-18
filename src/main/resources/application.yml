@@ -1,0 +1,16 @@
+logging:
+  level:
+    root: "info"
+
+management:
+  endpoints:
+    web:
+      # base-path: "/" # default value is "/actuator"
+      exposure:
+        include: "*"
+
+zuul:
+  routes:
+    test:
+      path: "/**"
+      url: "https://www.google.com"
