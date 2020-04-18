@@ -7,11 +7,11 @@ import com.sg.zuul.common.enums.FilterType;
 
 public abstract class AbstractFilter extends ZuulFilter{
 
-	protected FilterType filterType;
+	private FilterType filterType;
 	
-	protected boolean shouldFilter;
+	private boolean shouldFilter;
 	
-	protected int filterOrder;
+	private int filterOrder;
 	
 	public AbstractFilter(FilterType filterType, boolean shouldFilter, int filterOrder) {
 		// TODO Auto-generated constructor stub

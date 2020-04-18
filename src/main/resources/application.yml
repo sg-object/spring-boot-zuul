@@ -12,5 +12,5 @@ management:
 zuul:
   routes:
     test:
-      path: "/**"
+      path: "/test/**"
       url: "https://www.google.com"
