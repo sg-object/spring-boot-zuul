@@ -10,7 +10,7 @@ import com.sg.zuul.common.enums.FilterType;
 @Filter
 public class PreTestFilter extends AbstractFilter{
 
-	Logger logger = LoggerFactory.getLogger(PreTestFilter.class);
+	private Logger logger = LoggerFactory.getLogger(PreTestFilter.class);
 	
 	public PreTestFilter(FilterType filterType, boolean shouldFilter, int filterOrder) {
 		super(filterType, shouldFilter, filterOrder);
